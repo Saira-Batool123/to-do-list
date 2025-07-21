@@ -24,7 +24,8 @@ Local Storage: For client-side persistence of tasks and preferences.
 Font Awesome: For icons to enhance the user interface.
 
 <img width="1349" height="624" alt="image" src="https://github.com/user-attachments/assets/7ae03f8d-0bb5-4c8e-a67d-407b3150fcd6" />
-https://github.com/user-attachments/assets/f1837f3e-c0d7-436e-8ff8-8fd3d53165f1)
+<img width="1350" height="633" alt="image" src="https://github.com/user-attachments/assets/7c8eb3e7-a34e-45b9-a34a-79bee62a15d1" />
+
 
 Installation
 To run the Advanced To-Do List locally, follow these steps:
