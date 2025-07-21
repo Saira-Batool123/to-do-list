@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">Saira To-Do List</div>
+  <div class="container">
+    <h2>Signup</h2> 
+    <input id="username" placeholder="Choose Username" />
+    <input id="password" type="password" placeholder="Choose Password" />
+    <button onclick="signup()">Signup</button>
+    <p>Already have an account? <a href="index.html">Login</a></p>
+  </div>
+  <script>
+    async function signup(){
+      const u=document.getElementById("username").value;
+      const p=document.getElementById("password").value;
+      const res=await fetch("/signup",{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({username:u,password:p})
+      });
+      const data=await res.json();
+      if(data.success){
+        alert("Account created! Login please.");
+        window.location.href="index.html";
+      } else alert(data.error);
+    }
+  </script>
+</body>
+</html>
